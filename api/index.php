@@ -48,8 +48,8 @@ $router->all( '/(/.*)?', function($url) {
     $meta->output($content,'ico');
 
 });
-$router->all('/about', function() {
-    echo 'About Page Contents';
+$router->all('/info', function() {
+    phpinfo();
 });
 //$router->set404('/(/.*)?', function() {
 //    header('HTTP/1.1 404 Not Found');
